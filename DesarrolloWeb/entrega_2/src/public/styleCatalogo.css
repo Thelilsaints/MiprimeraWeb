@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(130deg, skyblue, rgb(39, 39, 165));
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.conteiner {
+    width: auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.foto {
+    background-color: #fafafc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px;
+
+}
+
+.foto H3 {
+    font-size: 1.2rem;
+    color: #00adef;
+    text-align: center;
+}
+
+.foto p{
+    font-size: 1.5rem;
+    color: #00adef;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.foto button {
+    background-color: #00adef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #00adef;
+    font-size: 1rem;
+}
+
+.foto button:hover {
+    background:linear-gradient(130deg, skyblue, blue);
+}
+
+@media (max-width: 992px) {
+    .foto {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 584px) {
+    .conteiner {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .foto {
+        width: calc(100% - 20px);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .foto img {
+        max-height: 200px;
+    }
+}
